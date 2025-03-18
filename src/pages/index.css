@@ -1,0 +1,235 @@
+@import url('../fonts/fonts.css');
+@import url('../styles/animations.css');
+@import url('../styles/globals.css');
+@import url('../styles/effects.css');
+@import url('../styles/variables.css');
+
+.page {
+  font-family: var(--font), sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/*Секция header*/
+
+.logo {
+  margin-block-start: 25px;
+  display: flex;
+  gap: 5px;
+  font-size: var(--extra-big-font-size);
+  justify-content: center;
+  align-items: center;
+  color: var(--logo-color);
+}
+
+/*Секция main*/
+
+.main {
+  margin: 105px 70px 50px;
+}
+
+/*Секция категорий*/
+
+.categories {
+  display: flex;
+  justify-content: center;
+}
+
+.categories__list {
+  display: flex;
+  gap: 14px;
+  overflow: auto;
+}
+
+.categories__list-item {
+  block-size: 50px;
+  padding: 5px;
+}
+
+.categories__button {
+  block-size: 40px;
+  border-radius: 50px;
+  padding: 8px 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.categories__button-text {
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+  line-height: 21.82px;
+  
+}
+
+/*Секция корзина*/
+
+.basket {
+  float: left;
+  margin-block-start: 135px;
+  inline-size: 270px;
+  display: grid;
+  grid-template-columns: 190px 50px;
+  align-items: center;
+}
+
+.basket__title {
+  font-size: var(--middle-font-size);
+  font-weight: var(--bold);
+  line-height: 24px;
+}
+
+.basket__amount {
+  font-size: var(--tiny-font-size);
+  font-weight: var(--regular);
+}
+
+.basket__subtitle {
+  padding-block-start: 16px;
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+  line-height: 21px;
+}
+
+/*Секция меню бургеров*/
+
+.burger-menu {
+  margin-block-start: 50px;
+}
+
+.burger-menu__title {
+  font-size: var(--big-font-size);
+  font-weight: var(--bold);
+  margin-block-end: 32px;
+}
+
+.burger-menu__list {
+  padding-inline-start: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  gap: 20px;
+  block-size: 70dvb;
+  overflow: auto;
+  scrollbar-width: none
+}
+
+.burger-menu__list-item {
+  block-size: 411px;
+}
+
+.burger-menu__image {
+  block-size: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  user-select: none;
+}
+
+.burger-menu__list-item:nth-child(5) .burger-menu__image {
+  inline-size: 276px;
+}
+
+.burger-menu__info {
+  margin-block-start: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  user-select: none;
+}
+
+.burger-price {
+  font-size: var(--middle-font-size);
+  font-weight: var(--bold);
+}
+
+.burger-name {
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+}
+
+.burger-gramm {
+  padding-block-start: 21px;
+  font-size: var(--mini-font-size);
+  font-weight: var(--bold);
+  color: var(--gramm-color);
+  opacity: 0.4;
+}
+
+.burger-menu__button {
+  margin-block-start: 20px;
+  margin-inline-start: 85px;
+  block-size: 40px;
+  border-radius: 50px;
+  padding: 8px 14px;
+}
+
+.burger-menu__button-text {
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+}
+
+.footer {
+  margin-block-start: 100px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 40px;
+}
+
+.left-footer__logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.left-footer__title {
+  font-size: var(--big-font-size);
+  color: var(--logo-footer-color)
+}
+
+.left-footer__text {
+  display: grid;
+  gap: 5px;
+  margin-block-start: 50px;
+}
+
+.center-footer {
+  padding-block-start: 90px;
+  padding-inline-start: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.common-footer__title {
+  font-size: var(--middle-font-size);
+  font-weight: var(--regular);
+  line-height: 24px;
+}
+
+.center-footer__tel {
+  padding-block-end: 10px;
+  pointer-events: all;
+}
+
+.tel {
+  position: relative;
+  display: inline-block;
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-block-start: 90px;
+}
+
+.right-footer__links {
+  display: flex;
+  gap: 15px;
+}

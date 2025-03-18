@@ -1,0 +1,147 @@
+a:not(.tel) {
+  opacity: 0.6;
+  transition: .2s ease;
+  position: relative;
+}
+
+a:not(.tel):hover {
+  opacity: 1;
+  transition: .2s ease;
+}
+
+.rot:hover {
+  animation: rot 1s ease 0s normal none running;
+}
+
+.logo-item {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.logo-item:hover {
+  transform: scale(1.4);
+  transition-delay: 0.10s;
+}
+
+.tel {
+  opacity: 0.6;
+  transition: .3s .2s ease;
+}
+
+.tel:hover {
+  opacity: 1;
+  transition: .3s ease;
+}
+
+.tel::before {
+  content: ''; 
+  position: absolute;
+  top: calc(100% + 1px);
+  inline-size: 0;
+  block-size: 1.5px;
+  right: 0;
+  transition: .5s cubic-bezier(0.51, 0.18, 0, 0.88) .2s;
+}
+  
+.tel:hover::before {
+  inline-size: 100%;
+  left: 0;
+  transition: inline-size .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+  background: var(--logo-footer-color);
+}
+
+/*
+.tel {
+  display: inline-block;
+  transition: 0.3s;
+  transition-delay: 0s;
+  transform: scale(1);
+}
+
+.tel:hover {  
+  transform: scale(1.4);
+  transition-delay: 0.11s;
+}
+
+.tel::after {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: calc(50% - 4px);
+  padding: 0 2px;
+  width: 0;
+  height: 0;
+  transition: 0.4s;
+}
+
+.tel:hover::after {
+  width: 100%;
+  height: 1.25em;
+  bottom: 0.05em;
+  left: -0.7em;
+  padding: 0.5em 5em;
+  background-image: linear-gradient(215deg, var(--main-bg-color), var(--accent-bg-color));;
+  border-radius: 2.5em;
+}
+*/
+
+.categories__button-text {
+  opacity: 1;
+  transition: color .2s linear;
+  transition: opacity .2s linear;
+}
+
+.categories__button-text:hover {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.is-active .categories__button-text {
+  color: var(--accent-color);
+  transition: color .2s linear;
+}
+
+.is-active .categories__button-text:hover {
+  opacity: 1;
+}
+
+.is-active.categories__button {
+  animation: pulse .2s;
+}
+
+.is-active.categories__button {
+  cursor: default;
+}
+
+
+
+.is-active.burger-menu__button {
+  animation: pulse .2s;
+  position: relative;
+}
+
+.burger-menu__button-text {
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+
+.burger-menu__button-text:hover {
+  opacity: 0.6;
+  transition: opacity .2s linear;
+}
+
+.is-active .burger-menu__button-text {
+  color: transparent;
+}
+
+.is-active .burger-menu__button-text::before {
+  content: 'Убрать ×';
+  color: var(--accent-color);
+  font-size: var(--font);
+  font-weight: var(--bold);
+  position: absolute;
+  left: 16px;
+}
+

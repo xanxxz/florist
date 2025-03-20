@@ -1,95 +1,18 @@
 @import url('../fonts/fonts.css');
-@import url('../styles/animations.css');
 @import url('../styles/globals.css');
-@import url('../styles/effects.css');
 @import url('../styles/variables.css');
+@import url('../styles/cards.css');
+@import url('../styles/places-list.css');
+@import url('../styles/header.css');
+@import url('../styles/main__menu.css');
+
 
 .page {
   font-family: var(--font), sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
-
-/*Секция header*/
-
-.logo {
-  margin-block-start: 25px;
-  display: flex;
-  gap: 5px;
-  font-size: var(--extra-big-font-size);
-  justify-content: center;
-  align-items: center;
-  color: var(--logo-color);
-}
-
 /*Секция main*/
-
-.main {
-  margin: 105px 70px 50px;
-}
-
-/*Секция категорий*/
-
-.categories {
-  display: flex;
-  justify-content: center;
-}
-
-.categories__list {
-  display: flex;
-  gap: 14px;
-  overflow: auto;
-}
-
-.categories__list-item {
-  block-size: 50px;
-  padding: 5px;
-}
-
-.categories__button {
-  block-size: 40px;
-  border-radius: 50px;
-  padding: 8px 14px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.categories__button-text {
-  font-size: var(--mini-font-size);
-  font-weight: var(--regular);
-  line-height: 21.82px;
-  
-}
-
-/*Секция корзина*/
-
-.basket {
-  float: left;
-  margin-block-start: 135px;
-  inline-size: 270px;
-  display: grid;
-  grid-template-columns: 190px 50px;
-  align-items: center;
-}
-
-.basket__title {
-  font-size: var(--middle-font-size);
-  font-weight: var(--bold);
-  line-height: 24px;
-}
-
-.basket__amount {
-  font-size: var(--tiny-font-size);
-  font-weight: var(--regular);
-}
-
-.basket__subtitle {
-  padding-block-start: 16px;
-  font-size: var(--mini-font-size);
-  font-weight: var(--regular);
-  line-height: 21px;
-}
 
 /*Секция меню бургеров*/
 

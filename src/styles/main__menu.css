@@ -1,0 +1,45 @@
+.main__menu {
+  margin-block-start: 100px;
+  margin-inline-start: 135px;
+  margin-inline-end: 135px;
+  display: grid;
+  gap: 20px;
+}
+
+.main__menu-title {
+  font-size: var(--extra-big-font-size);
+  font-weight: var(--bold);
+}
+
+.main__menu__list {
+  display: flex;
+  gap: 14px;
+  overflow: auto;
+}
+
+.main__menu__list-item {
+  block-size: 40px;
+  padding: 5px;
+}
+
+.main__menu__button {
+  block-size: 30px;
+  border-radius: 24px;
+  padding: 8px 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.main__menu__button:hover .main__menu__button-text {
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.main__menu__button-text {
+  font-size: var(--tiny-font-size);
+  font-weight: 540;
+  line-height: 21.82px;
+  opacity: .7;
+  transition: all .2s ease;
+}

@@ -1,0 +1,63 @@
+.card {
+  font-family: var(--font), sans-serif;
+  block-size: 410px;
+  background-color: #FDFBFB;
+  padding: 15px;
+  border-radius: 30px;
+  color: #1e1e1e;
+  transition: all .3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #fff;
+  transition: all .3s ease;
+  -webkit-box-shadow: 30px 27px 43px -22px rgba(205, 72, 255, 0.2), -30px 27px 43px -22px rgba(205, 72, 255, 0.2);
+  -moz-box-shadow: 30px 27px 43px -22px rgba(205, 72, 255, 0.2), -30px 27px 43px -22px rgba(205, 72, 255, 0.2);
+  box-shadow: 30px 27px 43px -22px rgba(205, 72, 255, 0.2), -30px 27px 43px -22px rgba(205, 72, 255, 0.2);
+}
+
+.card__image-box {
+  max-block-size: 225px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+}
+
+.card__image {
+  object-fit: cover;
+  object-position: auto;
+  width: 100%;
+
+}
+
+.card__description-box {
+  margin-block-start: 20px;
+  display: grid;
+  gap: 12px;
+
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 29px;
+  overflow: hidden;
+  margin: 0;
+  font-weight: var(--bold);
+}
+
+.card__description {
+  font-size: var(--tiny-font-size);
+  opacity: .8;
+}
+
+.card__price {
+  margin-block-start: 20px;
+  display: flex;
+  justify-content: center;
+  opacity: .95;
+  font-size: 28px;
+  font-weight: var(--bold);
+}

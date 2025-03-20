@@ -1,15 +1,14 @@
 :root {
     --font: 'Nunito';
-    --bg-color: #FDF4E3;
-    --logo-color: #F19CBB;
-    --text-color: #1e1e1e;
+    --bg-color: #fff;
+    --text-color: #373636;
     --dekstop-border-radius: 50% 250px;
 
-    --extra-big-font-size: 50px;
-    --big-font-size: 40px;
-    --middle-font-size: 24px;
+    --extra-big-font-size: 48px;
+    --big-font-size: 34px;
+    --middle-font-size: 28px;
     --mini-font-size: 18px;
-    --tiny-font-size: 12px;
+    --tiny-font-size: 16px;
     --extra-bold: 800;
     --bold: 600;
     --regular: 400;

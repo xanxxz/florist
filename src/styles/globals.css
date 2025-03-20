@@ -14,14 +14,14 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--main-bg-color);
+  background-color: var(--text-color);
   border-radius: 2px;
 }
 
 body {
   margin: 0 auto;
   min-inline-size: 375px;
-  max-inline-size: 1600px;
+  max-inline-size: 1980px;
   min-block-size: 100dvb;
 }
 
@@ -79,8 +79,14 @@ ol {
   text-transform: uppercase;
 }
 
-.is-active.button {
-  background-image: linear-gradient(215deg, var(--main-bg-color), var(--accent-bg-color));
+.is-active {
+  background-color: #FFD1E9;
+  transition: all .2s ease;
+}
+
+.is-active .main__menu__button-text {
+  opacity: 1;
+  transition: all .2s ease;
 }
 
 h2,

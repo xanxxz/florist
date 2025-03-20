@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мастерская цветочных событий Вязаночка </title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./images/logo.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/logotype.ico" type="image/x-icon">
+    <link rel="icon" href="<%=require('./images/logotype.svg')%>" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/logotype.png">
   </head>
   <body class="page">
   <header class="header">
     <img
-      src="<%=require('./images/logoO.svg')%>"
+      class="logo-item"
+      src="<%=require('./images/logo.svg')%>"
       alt="Логотип сайта"
     >
   </header>
   <main class="main">
     <nav class="main__menu">
-      <h2 class="main__menu-title">Категории</h2>
+      <h2 class="main__menu-title">Меню</h2>
       <ul class="main__menu__list">
         <li class="main__menu__list-item">
           <button class="button main__menu__button is-active" type="button">
@@ -121,81 +122,131 @@
     </nav>
     <section class="main__places">
       <div class="places">
-        <h2 class="places__title">Сборные букеты</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Сборные букеты</h3>
+        <ul class="places__list a">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Свадебные букеты</h2>
-        <ul class="places__list">
+        <h2 class="places__title">Свадебные букеты</h2>
+        <ul class="places__list b">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Свадебное оформление</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Свадебное оформление</h3>
+        <ul class="places__list c">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Оформление праздника</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Оформление праздника</h3>
+        <ul class="places__list d">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Сухоцветы</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Сухоцветы</h3>
+        <ul class="places__list f">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Оформление подарков</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Оформление подарков</h3>
+        <ul class="places__list g">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Озеленение</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Озеленение</h3>
+        <ul class="places__list h">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Мох</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Мох</h3>
+        <ul class="places__list i">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Корзины фруктовые</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Корзины фруктовые</h3>
+        <ul class="places__list g">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Корзины цветочные</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Корзины цветочные</h3>
+        <ul class="places__list k">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Индивидуальные букеты</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Индивидуальные букеты</h3>
+        <ul class="places__list l">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Сезонные букеты</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Сезонные букеты</h3>
+        <ul class="places__list m">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Сезонные праздники</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Сезонные праздники</h3>
+        <ul class="places__list n">
         </ul>
       </div>
       <div class="places flowers__section">
-        <h2 class="burger-menu__title">Декор</h2>
-        <ul class="places__list">
+        <h3 class="places__title">Декор</h3>
+        <ul class="places__list o">
         </ul>
       </div>
+    </section>
+    <section class="florist-info">
+      <h2 class="main__menu-title">Наши флористы</h2>
+      <div class="florist-info__block">
+        <div class="florist-info__image-box">
+          <img
+          class="florist-image"
+          src="<%=require('./images/women.jpg')%>"
+          alt=""
+          loading="lazy"
+          />
+        </div>
+        <div class="florist-info-description-box">
+          <h3 class="florist-info__name">Имя Фамилия</h3>
+          <p class="florist-info__description">
+            Как флорист, я превращаю простые цветы в настоящие произведения искусства, создавая уникальные композиции,
+            которые наполняют каждый момент особым смыслом. 
+            Моя работа заключается в том, чтобы не только оформлять букеты и декор для мероприятий, 
+            но и передавать эмоции и настроение через цветы.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <h2 class="main__menu-title">О нас</h2>
+      <ul class="about-us__list">
+        <li class="about-us__list-item">
+          <h3 class="about-us__list-item__title">Какой-то заголовок</h3>
+          <p class="about-us__list-item__text">
+            Какое-то описание...
+          </p>
+        </li>
+        <li class="about-us__list-item">
+          <h3 class="about-us__list-item__title">Какой-то заголовок</h3>
+          <p class="about-us__list-item__text">
+            Какое-то описание...
+          </p>
+        </li>
+        <li class="about-us__list-item">
+          <h3 class="about-us__list-item__title">Какой-то заголовок</h3>
+          <p class="about-us__list-item__text">
+            Какое-то описание...
+          </p>
+        </li>
+        <li class="about-us__list-item">
+          <h3 class="about-us__list-item__title">Какой-то заголовок</h3>
+          <p class="about-us__list-item__text">
+            Какое-то описание...
+          </p>
+        </li>
+      </ul>
     </section>
     <footer class="footer">
       <address class="address">
         <ul class="left-footer">
           <li class="left-footer__logo">
-            <h2 class="left-footer__title">Вязаночка </h2>
             <img
               class="left-footer__image"
               src="<%=require('./images/logo.svg')%>"
@@ -215,7 +266,7 @@
           <li>
             <p class="center-footer__tel">
               <a class="tel" href="tel: +79372522242" type="tel">
-                +7(937)252-22-42
+                +7(999)999-99-99
               </a>
             </p>
           </li>
@@ -238,6 +289,14 @@
                 class="rot"
                 src="<%=require('./images/tg.svg')%>"
                 alt="Telegram"
+                loading="lazy"
+              />
+            </a>
+            <a href="https://t.me/sssvam2" type="link" target="blank">
+              <img
+                class="rot"
+                src="<%=require('./images/watsapp.svg')%>"
+                alt="Watsapp"
                 loading="lazy"
               />
             </a>

@@ -1,0 +1,17 @@
+.about-us {
+  margin-inline-start: 135px;
+  margin-inline-end: 135px;
+  margin-block-start: 60px;
+}
+
+.about-us__list {
+  display: flex;
+  justify-content: right;
+  margin-block-start: 30px;
+  gap: 50px;
+}
+
+.about-us__list-item__title {
+  font-weight: var(--regular);
+  font-size: 25px;
+}

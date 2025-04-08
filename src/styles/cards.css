@@ -1,14 +1,11 @@
 .card {
   font-family: var(--font), sans-serif;
-  block-size: 410px;
+  block-size: 325px;
   background-color: #FDFBFB;
   padding: 15px;
   border-radius: 30px;
   color: #1e1e1e;
   transition: all .3s ease;
-  -webkit-box-shadow: 30px 27px 43px -22px #FFEAF5, -30px 27px 43px -22px #FFEAF5;
-  -moz-box-shadow: 30px 27px 43px -22px #FFEAF5, -30px 27px 43px -22px #FFEAF5;
-  box-shadow: 30px 27px 43px -22px #FFEAF5, -30px 27px 43px -22px #FFEAF5;
 }
 
 .card:hover {
@@ -20,8 +17,14 @@
   box-shadow: 0px 5px 10px 6px rgba(255, 121, 148, 0.2);
 }
 
+.card:hover .card__description-btn {
+  transition: all .3s ease;
+  opacity: 1;
+}
+
+
 .card__image-box {
-  max-block-size: 225px;
+  max-block-size: 235px;
   position: relative;
   overflow: hidden;
   -webkit-border-radius: 18px;
@@ -33,31 +36,64 @@
   object-fit: cover;
   object-position: auto;
   width: 100%;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
 }
 
 .card__description-box {
-  margin-block-start: 20px;
+  margin-block-start: 5%;
   display: grid;
-  gap: 12px;
-
 }
 
-.card__title {
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: var(--bold);
-}
-
-.card__description {
-  font-size: var(--tiny-font-size);
-  opacity: .8;
-}
-
-.card__price {
-  margin-block-start: 20px;
-  display: flex;
+.card__description-btn {
+  opacity: .7;
+  transition: all .3s ease;
+  color: #1e1e1e;
+  font-weight: var(--regular);
+  border: none;
+  cursor: pointer;
   justify-content: center;
-  opacity: .95;
-  font-size: 28px;
-  font-weight: var(--bold);
+  font-size: 20px;
+  block-size: 40px;
+  border-radius: 10px;
+  padding: 8px 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: transparent;
+}
+
+@media (min-width: 374px) and (max-width: 825px) {
+  .card {
+    block-size: 190px;
+    padding: 12px;
+    border-radius: 14px;
+  }
+  
+  .card__image-box {
+    max-block-size: 120px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+  }
+  
+  .card__image {
+    width: 100%;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+  }
+  
+  .card__description-box {
+    justify-content: center;
+    margin-block-start: 7%;
+  }
+  
+  .card__description-btn {
+    font-size: 14px;
+    block-size: 30px;
+    border-radius: 10px;
+    padding: 10px 14px;
+  }
 }

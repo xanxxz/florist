@@ -1,6 +1,6 @@
-const path = require('path'); // подключаем path к конфигу вебпак
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: { main: './src/scripts/index.js' },
@@ -51,6 +51,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
-      new MiniCssExtractPlugin()
+      new MiniCssExtractPlugin(),
   ]
 }

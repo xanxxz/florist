@@ -43,3 +43,30 @@
   opacity: .7;
   transition: all .2s ease;
 }
+
+@media (min-width: 374px) and (max-width: 825px) {
+  .main__menu {
+    margin-block-start: 50px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    gap: 20px;
+  }
+
+  .main__menu-title {
+    font-size: 25px;
+  }
+  
+  .main__menu__list {
+    gap: 7px;
+  }
+  
+  .main__menu__list-item {
+    padding: 5px;
+  }
+  
+  .main__menu__button {
+    block-size: 30px;
+    padding: 8px 7px;
+    gap: 4px;
+  }
+}

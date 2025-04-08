@@ -1,0 +1,43 @@
+.popup-filter {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.popup {
+  padding: 50px;
+  block-size: 90dvb;
+  inline-size: 90dvw;
+  background-color: rgba(231, 233, 241, 1);
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup__box {
+  display: flex;
+  gap: 30px;
+}
+
+.popup__close {
+  block-size: 50px;
+  inline-size: 50px;
+  background-color: #1e1e1e;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.places-list__gallery {
+  background-color: rgba(0, 0, 0, .5);
+  block-size: 100%;
+  inline-size: 42dvw;
+  border-radius: 30px;
+  overflow: auto;
+}

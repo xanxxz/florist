@@ -3,3 +3,9 @@
   justify-content: center;
   margin-block-start: 60px;
 }
+
+@media (min-width: 374px) and (max-width: 825px) {
+  .logo-item {
+    width: 250px;
+  }
+}

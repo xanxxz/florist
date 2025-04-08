@@ -20,7 +20,6 @@
 
 body {
   margin: 0 auto;
-  min-inline-size: 375px;
   max-inline-size: 1980px;
   min-block-size: 100dvb;
 }

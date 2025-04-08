@@ -5,13 +5,41 @@
 }
 
 .about-us__list {
-  display: flex;
-  justify-content: right;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   margin-block-start: 30px;
   gap: 50px;
 }
 
 .about-us__list-item__title {
-  font-weight: var(--regular);
   font-size: 25px;
+  margin-block-end: 10px;
+  font-weight: var(--bold);
+}
+
+.about-us__list-item__text {
+  font-size: 20px;
+}
+
+@media (min-width: 374px) and (max-width: 825px) {
+  .about-us {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 50px;
+  }
+  
+  .about-us__list {
+    display: grid;
+    grid-template-columns: none;
+    gap: 30px;
+  }
+  
+  .about-us__list-item__title {
+    font-size: 20px;
+    margin-block-end: 5px;
+  }
+  
+  .about-us__list-item__text {
+    font-size: 14px;
+  }
 }

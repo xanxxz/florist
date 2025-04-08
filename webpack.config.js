@@ -1,7 +1,6 @@
-const path = require('path'); // подключаем path к конфигу вебпак
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: { main: './src/scripts/index.js' },
@@ -16,12 +15,6 @@ module.exports = {
     compress: true,
     port: 8080,
     open: true
-  },
-  entry: { main: './src/scripts/index.js' },
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
   },
   module: {
     rules: [
@@ -59,10 +52,5 @@ module.exports = {
       template: './src/index.html'
     }),
       new MiniCssExtractPlugin(),
-      new CopyWebpackPlugin({
-        patterns: [
-          { from: 'src/404.html', to: '404.html' }
-        ]
-      })
   ]
 }

@@ -8,13 +8,20 @@
 @import url('../styles/florist-info.css');
 @import url('../styles/about-us.css');
 @import url('../styles/footer.css');
+@import url('../styles/popup.css');
+@import url('../styles/popup_is-animated.css');
+@import url('../styles/popup_is-opened.css');
+
 
 .page {
   font-family: var(--font), sans-serif;
   background-color: rgba(231, 233, 241, 1);
   color: var(--text-color);
 }
-/*Секция main*/
 
-/*Секция меню бургеров*/
-
+@media (min-width: 374px) and (max-width: 825px) {
+  .main {
+    width: 90%;
+    margin-inline: 5%;
+  }
+}

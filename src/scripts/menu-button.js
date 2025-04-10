@@ -1,10 +1,25 @@
-const btnMenu = Array.from(document.querySelectorAll('.categories__button'));
-
-btnMenu.forEach((btns) => {
-	btns.addEventListener('click', () => {
-		btnMenu.forEach((btns) => {
-			btns.classList.remove('is-active');
+export function chooseMenu(btnMenu) {
+	btnMenu.forEach((btns) => {
+		btns.addEventListener('click', () => {
+			btnMenu.forEach((btns) => {
+				btns.classList.remove('is-active');
+        btns.disabled = false;
+			});
+			btns.classList.add('is-active');
+      btns.disabled = true;
 		});
-		btns.classList.add('is-active');
 	});
-});
+};
+
+  window.addEventListener('scroll', () => {
+    const headerMenu = document.querySelector('.main__menu')
+    if (window.pageYOffset > 210 && window.innerWidth < 825) {
+        headerMenu.classList.add('fixed')
+    } else {
+        headerMenu.classList.remove('fixed')
+    }
+  })
+
+export function scroll(place) {
+  place.scrollIntoView({behavior: "smooth", block: "nearest"});
+};

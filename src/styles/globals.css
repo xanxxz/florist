@@ -81,6 +81,7 @@ ol {
 .is-active {
   background-color: rgba(255, 121, 148, 0.4);
   transition: all .2s ease;
+  cursor: default;
 }
 
 .is-active .main__menu__button-text {

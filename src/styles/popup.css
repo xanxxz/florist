@@ -13,24 +13,41 @@
 
 .popup {
   padding: 50px;
-  block-size: 90dvb;
-  inline-size: 90dvw;
+  block-size: 80dvb;
+  inline-size: 80dvw;
   background-color: rgba(231, 233, 241, 1);
   border-radius: 50px;
   display: flex;
   justify-content: space-between;
 }
 
+.title-box {
+  font-size: 40px;
+  margin-block-end: 30px;
+  margin-block-start: 50px;
+}
+
+.number {
+  font-size: 30px;
+  margin-block-end: 10px;
+}
+
+
+.number .tel {
+  font-size: 25px;
+}
+
 .popup__box {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .popup__close {
   block-size: 50px;
   inline-size: 50px;
-  background-color: #1e1e1e;
   border-radius: 50px;
+  background-color: transparent;
+  border-color: transparent;
   cursor: pointer;
 }
 
@@ -40,4 +57,18 @@
   inline-size: 42dvw;
   border-radius: 30px;
   overflow: auto;
+}
+
+.popup__pay {
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 24px;
+  width: 100px;
+  height: 40px;
+  margin-block-start: 23dvb; 
+  margin-inline-start: 15%; 
+}
+
+.button-pay {
+  font-size: 40px;
 }

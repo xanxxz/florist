@@ -68,12 +68,12 @@
 @media (min-width: 374px) and (max-width: 825px) {
   .card {
     block-size: 190px;
-    padding: 12px;
+    padding: 10px;
     border-radius: 14px;
   }
   
   .card__image-box {
-    block-size: 130px;
+    block-size: 140px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
@@ -87,7 +87,7 @@
   
   .card__description-box {
     justify-content: center;
-    margin-block-start: 7%;
+    margin-block-start: 3%;
   }
   
   .card__description-btn {
@@ -100,7 +100,7 @@
 
 @media (min-width: 414px) and (max-width: 825px) {
   .card__image-box {
-    block-size: 145px;
+    block-size: 157px;
   }
 
   .card {

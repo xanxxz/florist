@@ -1,5 +1,6 @@
 import '../pages/index.css';
 import {createCard, initOverlayClose} from './card.js';
+import {chooseMenu, scroll} from './menu-button.js';
 import {
   sbornyCard, 
   svadebnyCard, 
@@ -31,6 +32,67 @@ const placesListJ = document.querySelector('.j');
 const placesListK = document.querySelector('.k');
 const placesListL = document.querySelector('.l');
 const placesListM = document.querySelector('.m');
+
+const btnMenu = Array.from(document.querySelectorAll('.main__menu__button'));
+
+const sbornyBtn = document.querySelector('.sborny-button');
+const svadebnyBtn = document.querySelector('.svadebny-button');
+const svadebnyOformBtn = document.querySelector('.svadebny-oform-button');
+const oformPrazdnikBtn = document.querySelector('.oform-prazdnik-button');
+const suxozvetBtn = document.querySelector('.suxozvet-button');
+const oformPodarkBtn = document.querySelector('.oform-podark-buttun');
+const ozelenenBtn = document.querySelector('.ozelenen-button');
+const moxBtn = document.querySelector('.mox-button');
+const fruitKorzinBtn = document.querySelector('.fruit-korzin-button');
+const flowerKorzinBtn = document.querySelector('.flower-korzin-button');
+const indivudualBtn = document.querySelector('.indivudual-button');
+const sezonBtn = document.querySelector('.sezon-button');
+const dekorBtn = document.querySelector('.dekor-button');
+
+const sbornyPlace = document.querySelector('.sborny-places');
+const svadebnyPlace = document.querySelector('.svadebny-places');
+const svadebnyOformPlace = document.querySelector('.svadebny-oform-places');
+const oformPrazdnikPlace = document.querySelector('.oform-prazdnik-places');
+const suxozvetPlace = document.querySelector('.suxozvet-places');
+const oformPodarkPlace = document.querySelector('.oform-podark-places');
+const ozelenenPlace = document.querySelector('.ozelenen-places');
+const moxPlace = document.querySelector('.mox-places');
+const fruitKorzinPlace = document.querySelector('.fruit-korzin-places');
+const flowerKorzinPlace = document.querySelector('.flower-korzin-places');
+const indivudualPlace = document.querySelector('.indivudual-places');
+const sezonPlace = document.querySelector('.sezon-places');
+const dekorPlace = document.querySelector('.dekor-places');
+
+
+sbornyBtn.addEventListener('click', () => scroll(sbornyPlace));
+svadebnyBtn.addEventListener('click', () => scroll(svadebnyPlace));
+svadebnyOformBtn.addEventListener('click', () => scroll(svadebnyOformPlace));
+oformPrazdnikBtn.addEventListener('click', () => scroll(oformPrazdnikPlace));
+suxozvetBtn.addEventListener('click', () => scroll(suxozvetPlace));
+oformPodarkBtn.addEventListener('click', () => scroll(oformPodarkPlace));
+ozelenenBtn.addEventListener('click', () => scroll(ozelenenPlace));
+moxBtn.addEventListener('click', () => scroll(moxPlace));
+fruitKorzinBtn.addEventListener('click', () => scroll(fruitKorzinPlace));
+flowerKorzinBtn.addEventListener('click', () => scroll(flowerKorzinPlace));
+indivudualBtn.addEventListener('click', () => scroll(indivudualPlace));
+sezonBtn.addEventListener('click', () => scroll(sezonPlace));
+dekorBtn.addEventListener('click', () => scroll(dekorPlace));
+
+const menu = document.querySelector('.main__menu')
+const menuList = menu.querySelector('.main__menu__list')
+
+menu.addEventListener('wheel', (evt) => {
+  if (window.innerWidth > 824) {
+    evt.preventDefault();
+    
+    menuList.scrollBy({
+        left: evt.deltaY,
+        behavior: 'smooth'
+    });
+}
+});
+
+chooseMenu(btnMenu)
 
 initOverlayClose(popup);
 

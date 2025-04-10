@@ -11,6 +11,7 @@
 @import url('../styles/popup.css');
 @import url('../styles/popup_is-animated.css');
 @import url('../styles/popup_is-opened.css');
+@import url('../styles/fixed.css');
 
 
 .page {

@@ -4,6 +4,7 @@
   margin-inline-end: 135px;
   display: grid;
   gap: 20px;
+  transition: top 0.3s;
 }
 
 .main__menu-title {

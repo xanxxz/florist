@@ -1,83 +1,87 @@
 export const sbornyCard = [
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/6qJcryT.jpeg",
+    link: "https://i.imgur.com/JSR2iGA.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/ZNnH351.jpeg",
+    link: "https://i.imgur.com/oipkcFs.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/6sGLRQF.jpeg",
+    link: "https://i.imgur.com/5TibKQQ.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/6j1UbPj.jpeg",
+    link: "https://i.imgur.com/YlRLumk.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/9JPmbZv.jpeg",
+    link: "https://i.imgur.com/yOO1str.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/wStu4Kr.jpeg",
+    link: "https://i.imgur.com/YKBSIej.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/J9doeLI.jpeg",
+    link: "https://i.imgur.com/9BssqjM.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/3ZJYhB3.jpeg",
+    link: "https://i.imgur.com/jdj3UQS.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/q9r6aIU.jpeg",
+    link: "https://i.imgur.com/jGYXTYc.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/qsmtjDO.jpeg",
+    link: "https://i.imgur.com/gYtkokp.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/LhlQTjC.jpeg",
+    link: "https://i.imgur.com/0ggf1Z1.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/IxBXyIp.jpeg",
+    link: "https://i.imgur.com/3OCcY4z.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/wAX3zpE.jpeg",
+    link: "https://i.imgur.com/35Cn2E3.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/XWHrsAK.jpeg",
+    link: "https://i.imgur.com/Rdu5j2H.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/gJy00s1.jpeg",
+    link: "https://i.imgur.com/BAS5UTy.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/AxkDhpU.jpeg",
+    link: "https://i.imgur.com/a93DlC1.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/0JWOqWc.jpeg",
+    link: "https://i.imgur.com/kWIplfz.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/3pN64Ba.jpeg",
+    link: "https://i.imgur.com/FTFahXd.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/lhSRLwV.jpeg",
+    link: "https://i.imgur.com/U0niDa4.jpeg",
   },
   {
     name: "Сборный букет",
-    link: "https://i.imgur.com/Xx65i35.jpeg",
+    link: "https://i.imgur.com/HzuGX3r.jpeg",
+  },
+  {
+    name: "Сборный букет",
+    link: "https://i.imgur.com/D1NPMgF.jpeg",
   }
 ];
 

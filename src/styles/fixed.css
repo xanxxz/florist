@@ -1,13 +1,7 @@
 .fixed {
-  margin-block-start: 0;
-  overflow: auto;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
+  width: 100%;
   background-color: rgba(231, 233, 241, 1);
   z-index: 10;
-}
-
-.fixed .main__menu-title {
-  display: none;
 }

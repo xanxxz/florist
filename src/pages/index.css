@@ -22,7 +22,12 @@
 
 @media (min-width: 374px) and (max-width: 825px) {
   .main {
-    width: 90%;
-    margin-inline: 5%;
+    width: 94%;
+    margin-inline: 3%;
+  }
+  
+  *::-webkit-scrollbar {
+    height: 0;
+    width: 0;
   }
 }

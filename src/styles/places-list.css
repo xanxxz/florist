@@ -71,7 +71,7 @@
   }
   
   .places__list {
-    grid-template-columns: repeat(auto-fit, 160px);
+    grid-template-columns: repeat(auto-fit, 171px);
     grid-gap: 10px 9px;
     margin-block-start: 20px;
   }
@@ -96,6 +96,6 @@
 
 @media (min-width: 414px) and (max-width: 825px) {
   .places__list {
-    grid-template-columns: repeat(auto-fit, 180px);
+    grid-template-columns: repeat(auto-fit, 190px);
   }
 }

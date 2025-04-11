@@ -92,6 +92,7 @@ menu.addEventListener('wheel', (evt) => {
 }
 });
 
+
 chooseMenu(btnMenu)
 
 initOverlayClose(popup);

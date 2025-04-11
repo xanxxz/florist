@@ -13,8 +13,8 @@
 
 .popup {
   padding: 50px;
-  block-size: 80dvb;
-  inline-size: 80dvw;
+  block-size: 600px;
+  inline-size: 1100px;
   background-color: rgba(231, 233, 241, 1);
   border-radius: 50px;
   display: flex;
@@ -39,7 +39,7 @@
 
 .popup__box {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .popup__close {
@@ -54,21 +54,241 @@
 .places-list__gallery {
   background-color: rgba(0, 0, 0, .5);
   block-size: 100%;
-  inline-size: 42dvw;
+  inline-size: 500px;
   border-radius: 30px;
-  overflow: auto;
 }
 
 .popup__pay {
   border-color: transparent;
   background-color: transparent;
+  color: #373636;
+  opacity: .7;
   border-radius: 24px;
-  width: 100px;
-  height: 40px;
-  margin-block-start: 23dvb; 
-  margin-inline-start: 15%; 
+  margin-inline-start: 25%;
+  margin-block-start: 120px;
+  font-size: 40px;
+  transition: all .2s ease;
 }
 
-.button-pay {
-  font-size: 40px;
+.popup__pay:hover {
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.popup__image {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+@media (min-width: 826px) and (max-width: 1100px) {
+  .popup {
+    padding: 40px;
+    block-size: 500px;
+    inline-size: 900px;
+  }
+  
+  .title-box {
+    font-size: 35px;
+    margin-block-end: 20px;
+    margin-block-start: 20px;
+  }
+  
+  .number {
+    font-size: 25px;
+  }
+  
+  .number .tel {
+    font-size: 20px;
+  }
+  
+  .popup__box {
+    display: flex;
+  }
+  
+  .places-list__gallery {
+    inline-size: 450px;
+  }
+  
+  .popup__pay {
+    margin-inline-start: 10%;
+    margin-block-start: 80px;
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 825px) {
+  .popup-filter {
+    align-items: end;
+    justify-content: center;
+  }
+
+  .popup {
+    padding: 3%;
+    block-size: 88dvb;
+    inline-size: 100%;
+    border-radius: 0;
+    display: block;
+    flex-direction: column;
+  }
+  
+  .popup__box {
+    margin-block-start: 10px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .title-box {
+    display: flex;
+    font-size: 35px;
+    margin-block-end: 10px;
+    margin-block-start: 30px;
+  }
+  
+  .number {
+    font-size: 27px;
+    margin-block-end: 10px;
+  }
+  
+  .number .tel {
+    font-size: 23px;
+  }
+  
+  .popup__close {
+    display: none;
+  }
+  
+  .places-list__gallery {
+    block-size: 370px;
+    inline-size: 100%;
+    border-radius: 20px;
+  }
+  
+  .popup__pay {
+    margin-block-start: 95px;
+    font-size: 35px;
+  }
+  
+  .popup__image {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 389px) and (max-width: 413px) {
+  .popup-filter {
+    align-items: end;
+    justify-content: center;
+  }
+
+  .popup {
+    padding: 3%;
+    block-size: 88dvb;
+    inline-size: 100%;
+    border-radius: 0;
+    display: block;
+    flex-direction: column;
+  }
+  
+  .popup__box {
+    margin-block-start: 10px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .title-box {
+    display: flex;
+    font-size: 34px;
+    margin-block-end: 10px;
+    margin-block-start: 30px;
+  }
+  
+  .number {
+    font-size: 24px;
+    margin-block-end: 0;
+  }
+  
+  .number .tel {
+    font-size: 21px;
+  }
+  
+  .popup__close {
+    display: none;
+  }
+  
+  .places-list__gallery {
+    block-size: 330px;
+    inline-size: 100%;
+    border-radius: 20px;
+  }
+  
+  .popup__pay {
+    margin-block-start: 130px;
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 388px) {
+  .popup-filter {
+    align-items: end;
+  }
+
+  .popup {
+    padding: 3%;
+    block-size: 88dvb;
+    inline-size: 100%;
+    border-radius: 0;
+    display: block;
+    flex-direction: column;
+  }
+  
+  .popup__box {
+    margin-block-start: 10px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .title-box {
+    display: flex;
+    font-size: 32px;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+  }
+  
+  .number {
+    font-size: 22px;
+    margin-block-end: 0;
+  }
+  
+  .number .tel {
+    font-size: 17px;
+  }
+  
+  .popup__close {
+    display: none;
+  }
+  
+  .places-list__gallery {
+    block-size: 330px;
+    inline-size: 100%;
+    border-radius: 20px;
+  }
+  
+  .popup__pay {
+    margin-block-start: 20px;
+    font-size: 32px;
+  }
+  
+  .popup__image {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
 }
